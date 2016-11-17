@@ -1,0 +1,5 @@
+Etiqueta .attr (Atributo): nos permite cambiar el atributo de una variable de html
+
+Esta forma cambiamos el atributo y su numero: [$(elemento).attr("atributonombre","valordeatributo");]
+
+Esta otra forma, obtenemos el atributo nombrado: [$(elemento).atr("atributonombre");]
