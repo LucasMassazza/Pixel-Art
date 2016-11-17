@@ -55,9 +55,9 @@ var myPixelDraw = {
 
 		colorPalette:function(){
 			console.log("GG");
-			$(".colores .forma").each(function(e){
+			$(".colores .forma").each(function(i, e){
 				var color = $(e).attr("id");
-				console.log("HH")
+				console.log(e);
 				$(e).css({"background-color": color});
 			});
 		},
