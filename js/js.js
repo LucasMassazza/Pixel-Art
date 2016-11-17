@@ -42,7 +42,7 @@ var myPixelDraw = {
 			$("#enter").submit(
 				function(){
 					var x = $("#tamanogrilla").val();
-					if (x<50) {
+					if (x<=50 && x>=1) {
 						myPixelDraw.fns.calcSize(x);
 					}
 					else {
@@ -54,8 +54,11 @@ var myPixelDraw = {
 
 
 		colorPalette:function(){
-			$(".elijocolor").each(function(){
-				
+			console.log("GG");
+			$(".colores .forma").each(function(e){
+				var color = $(e).attr("id");
+				console.log("HH")
+				$(e).css({"background-color": color});
 			});
 		},
 
