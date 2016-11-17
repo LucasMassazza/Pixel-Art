@@ -31,12 +31,32 @@ var myPixelDraw = {
 			
 		},
 
-		detectMose:function(){
-
+		detectMouse:function(){
+			$(document).mouseup(
+				function(){
+					myPixelDraw.coloring=false;
+				});
 		},
 
-		colorPalette:function(){
+		resize:function(){
+			$("#enter").submit(
+				function(){
+					var x = $("#tamanogrilla").val();
+					if (x<50) {
+						myPixelDraw.fns.calcSize(x);
+					}
+					else {
+						alert("Por favor ingrese un tamaño menor a 50 pixeles.")
+						$("#tamanogrilla").val("");
+					}
+				});
+		},
 
+
+		colorPalette:function(){
+			$(".elijocolor").each(function(){
+				
+			});
 		},
 
 		pickcolor:function(){
