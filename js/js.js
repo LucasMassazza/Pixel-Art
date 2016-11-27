@@ -6,7 +6,7 @@ var myPixelDraw = {
 	fns: {
 
 		grabimage: function(numero){
-			console.log("Prueba funcion Grabimage");
+
 		},
 
 		calcSize:function(cantceldas){
@@ -54,7 +54,6 @@ var myPixelDraw = {
 
 
 		colorPalette:function(){
-			console.log("GG");
 			$(".colores .forma").each(function(i, e){
 				var color = $(e).attr("id");
 				console.log(e);
@@ -63,24 +62,57 @@ var myPixelDraw = {
 		},
 
 		pickcolor:function(){
-
+			$(".colores div").click(function(){
+				myPixelDraw.colorPicked=$(this).attr("id");
+				$(".colores div").removeClass("seleccionado")
+				$(this).addClass("seleccionado");
+			});
 		},
 
 		colorlt:function(){
+			$(document).on("mousedown",".celda",function(evento){
+				evento.preventDefault();
+				myPixelDraw.coloring=true;
 
+				if(evento.button===0){
+					$(this).css("background-color",myPixelDraw.colorPicked);
+
+				}
+				if(evento.button===2){
+					$(this).css("background-color",myPixelDraw.cellColor);
+				}
+
+			});
 		},
 
 		colorOnDrag:function(){
+			$(document).mousemove(function(evento){
+				var seleccionElemento= $(evento.target);
+				if(seleccionElemento.hasClass("celda") && myPixelDraw.coloring){
+					if(evento.button===0){
+						$(seleccionElemento).css("background-color",myPixelDraw.colorPicked);
 
+					}
+					if(evento.button===2){
+						$(seleccionElemento).css("background-color",myPixelDraw.cellColor);
+					}
+				}
+			});
 		},
 		reset:function(){
-
+			$(".borraimagen").click(function(){
+				$(".celda").css("background-color",myPixelDraw.cellColor);
+			});
 		},
 		toggleBorders:function(){
-
+			$(".onoffgrilla").click(function(){
+				$(".celda").toggleClass("sin-borde");
+			})
 		},
 		disableRightClick:function(){
-
+			myPixelDraw.Mycontenedor.on("contextmenu",function(){
+				return false;
+			});
 		}
 	},
 

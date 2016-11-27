@@ -48,5 +48,14 @@ html {
 .celda {
 	outline:1px solid black;
 	float: left;
+	background-color: #ecf0f1;
 }
 
+.seleccionado {
+	border:1px solid black;
+	box-sizing: border-box;
+}
+
+.sin-borde {
+	outline: none;
+}
