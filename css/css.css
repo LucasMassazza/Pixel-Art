@@ -1,5 +1,5 @@
 html {
-
+	background-color: black;
 }
 
 .grilla{
@@ -8,28 +8,39 @@ html {
 	width: 400px;
 	height: 400px;
 	background-color: #ecf0f1;
+	border: 4px solid #a8a3a8;
+	
+}
+
+.elijocolor {
+	clear: both;
+	float: left;
+	border: 4px solid #a8a3a8;
+	border-radius: 16px 16px 16px 16px;
+
 }
 
 .colores {
 	width: 190px;
-	height: 200px;
-	margin-right: 10px;
+	height: 100px;
+	float: left;
+	margin-right: 2.5px;
+	margin-left:  2.5px;
+	margin-top: 3%;
 }
 
 .elementos {
-	background-color: yellow;
-
+	background-color: ;
+	float: left;
+	height: 100px;
+	margin-top: 10px;
 }
-.elementos1 {
-	background-color: blue;
 
-}
 
 .forma {
 
 	width: 30px;
 	height: 30px;
-	border:3px solid #000;
 	border-radius: 180px;
 	display: inline-block;
 
@@ -37,8 +48,10 @@ html {
 
 .elijocolor {
 	margin-left: 30%;
+	margin-top: 10px;
 	width: 400px;
-	height: 150px;
+	height: 120px;
+	background-color: #F0F0F0;
 }
 .elementos,.elementos1{
 	width: 200px;
@@ -46,9 +59,9 @@ html {
 }
 
 .celda {
-	outline:1px solid black;
+	outline:1px solid #ECECEC;
 	float: left;
-	background-color: #ecf0f1;
+	background-color: white;
 }
 
 .seleccionado {
@@ -58,4 +71,39 @@ html {
 
 .sin-borde {
 	outline: none;
+}
+
+.input {
+	margin-top: 10px;
+	width: 150px;
+}
+
+.onoffgrilla,.borraimagen,.copiarimagen {
+	width: 30px;
+	height: 30px;
+}
+
+.parrafo {
+	margin: 0px;
+}
+
+.botones-varios {
+	margin-top: 10px;
+}
+.titulo {
+	color: white;
+	text-align: center;
+	clear: both;
+	font-size: 220%;
+	font-family: 'Baloo Bhaina', cursive;
+
+}
+
+.titulo1 {
+	margin-top: 170px;
+}
+
+.letras {
+	font-size: 30px;
+	font-family: 'Baloo Bhaina', cursive;
 }

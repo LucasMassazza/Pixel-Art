@@ -1,6 +1,6 @@
 var myPixelDraw = {
 	colorPicked: 0,
-	cellColor: "#ecf0f1",
+	cellColor: "white",
 	celdasdefault: 30,
 	coloring: false,
 	fns: {
@@ -42,12 +42,17 @@ var myPixelDraw = {
 			$("#enter").submit(
 				function(){
 					var x = $("#tamanogrilla").val();
-					if (x<=50 && x>=1) {
-						myPixelDraw.fns.calcSize(x);
+					if(x!=0){
+						if (x<=50 && x>=1) {
+							myPixelDraw.fns.calcSize(x);
+						}
+						else {
+							alert("Por favor ingrese un tamaño menor a 50 pixeles.")
+							$("#tamanogrilla").val("");
+						}
 					}
 					else {
-						alert("Por favor ingrese un tamaño menor a 50 pixeles.")
-						$("#tamanogrilla").val("");
+						$('#tamanogrilla').val('');
 					}
 				});
 		},
