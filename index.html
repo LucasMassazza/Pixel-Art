@@ -13,12 +13,14 @@
 
 	<script type="text/javascript" src="jquery-3.1.1.min (2).js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/html2canvas.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/css.css">
 
 	<link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+
 </head>
 
 
@@ -124,21 +126,25 @@
 				<!--Muestra o no grilla-->
 
 					<button class="onoffgrilla">
-						<span class="ion-checkmark-circled"></span>
+						<span id="grilla-cambia" class="ion-ios-grid-view"></span>
 					</button>
-
 					<!--Borrado dibujo-->
 
 					<button class="borraimagen">
-						<span class="ion-ios-trash"></span>		
+						<span class="ion-trash-b"></span>		
 					</button>
 
-					<button class="copiarimagen">
-						<span class="ion-android-done"></span>
+					<button id="hola" class="copiarimagen">
+						<span class="ion-scissors"></span>
 					</button>
 			</div>
  	</div>
 </div>
+
+
+	<p class="titulo-abajo">
+		Copia tu imagen
+	</p>
 
 
 

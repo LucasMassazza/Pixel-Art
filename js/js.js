@@ -61,7 +61,6 @@ var myPixelDraw = {
 		colorPalette:function(){
 			$(".colores .forma").each(function(i, e){
 				var color = $(e).attr("id");
-				console.log(e);
 				$(e).css({"background-color": color});
 			});
 		},
@@ -110,17 +109,32 @@ var myPixelDraw = {
 			});
 		},
 		toggleBorders:function(){
+			var x = true;
 			$(".onoffgrilla").click(function(){
 				$(".celda").toggleClass("sin-borde");
+				$("#grilla-cambia").toggleClass("ion-ios-grid-view-outline");
 			})
 		},
 		disableRightClick:function(){
 			myPixelDraw.Mycontenedor.on("contextmenu",function(){
 				return false;
 			});
-		}
-	},
+		},
+	
 
+		grabImage: function() {
+				$('#hola').on("click",function(e) {		
+					console.log("hola");	
+					$(".titulo-abajo").show();
+					var grilla = document.getElementById('.grilla');
+	                html2canvas(grilla, {
+	                    onrendered: function(canvas) {
+	                        document.body.appendChild(canvas);
+	                    }
+	                });
+	           	});
+	        }
+	},
 	init:function(contenedor){
 		this.Mycontenedor=contenedor;
 
@@ -129,11 +143,12 @@ var myPixelDraw = {
 		for (var i = 0; i < arraydefunciones.length; i++) {
 			myPixelDraw.fns[arraydefunciones[i]]();
 		}
-	}
+	}	
+	
 };
 
 $(document).ready(function(){
-
+	$(".titulo-abajo").hide();
 	myPixelDraw.init($(".grilla"));
 
 });

@@ -1,12 +1,13 @@
 html {
-	background-color: black;
+	
+	background-color:black;
 	font-family: 'Baloo Bhaina', cursive;
 }
 
 
 .grilla{
 	clear: both;
-	margin-left: 30%;
+	margin:auto;
 	width: 400px;
 	height: 400px;
 	background-color: #ecf0f1;
@@ -42,17 +43,16 @@ html {
 
 .elijocolor {
 	position: absolute;
-	margin-left: 29.5%;
+	margin-left: 33%;
 	margin-top: 10px;
 	width: 400px;
-	height: 30%;
+	height: 150px;
 	background-color: #F0F0F0;
 	clear: both;
-	float: left;
 	border: 4px solid #a8a3a8;
 	border-radius: 16px 16px 16px 16px;
 }
-.elementos,.elementos1{
+.elementos{
 	width: 200px;
 
 }
@@ -64,7 +64,7 @@ html {
 }
 
 .seleccionado {
-	border:1px solid black;
+	border:1.5px solid black;
 	box-sizing: border-box;
 }
 
@@ -92,6 +92,8 @@ html {
 	margin-top: 10px;
 }
 .titulo {
+	margin: 0px;
+	line-height: 180%;
 	color: #e2e4ea;
 	text-align: center;
 	clear: both;
@@ -108,3 +110,4 @@ html {
 	font-size: 30px;
 	font-family: 'Baloo Bhaina', cursive;
 }
+
