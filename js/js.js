@@ -126,7 +126,7 @@ var myPixelDraw = {
 				$('#hola').on("click",function(e) {		
 					console.log("hola");	
 					$(".titulo-abajo").show();
-					var grilla = document.getElementById('.grilla');
+					var grilla = document.getElementById('grilla');
 	                html2canvas(grilla, {
 	                    onrendered: function(canvas) {
 	                        document.body.appendChild(canvas);
