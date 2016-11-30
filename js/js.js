@@ -129,11 +129,14 @@ var myPixelDraw = {
 					var grilla = document.getElementById('grilla');
 	                html2canvas(grilla, {
 	                    onrendered: function(canvas) {
+	          				$("canvas").remove();
 	                        document.body.appendChild(canvas);
 	                    }
 	                });
 	           	});
-	        }
+	        },
+
+
 	},
 	init:function(contenedor){
 		this.Mycontenedor=contenedor;
