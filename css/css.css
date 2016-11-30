@@ -1,6 +1,8 @@
 html {
 	background-color: black;
+	font-family: 'Baloo Bhaina', cursive;
 }
+
 
 .grilla{
 	clear: both;
@@ -10,14 +12,6 @@ html {
 	background-color: #ecf0f1;
 	border: 4px solid #a8a3a8;
 	
-}
-
-.elijocolor {
-	clear: both;
-	float: left;
-	border: 4px solid #a8a3a8;
-	border-radius: 16px 16px 16px 16px;
-
 }
 
 .colores {
@@ -47,11 +41,16 @@ html {
 }
 
 .elijocolor {
-	margin-left: 30%;
+	position: absolute;
+	margin-left: 29.5%;
 	margin-top: 10px;
 	width: 400px;
-	height: 120px;
+	height: 30%;
 	background-color: #F0F0F0;
+	clear: both;
+	float: left;
+	border: 4px solid #a8a3a8;
+	border-radius: 16px 16px 16px 16px;
 }
 .elementos,.elementos1{
 	width: 200px;
@@ -79,11 +78,13 @@ html {
 }
 
 .onoffgrilla,.borraimagen,.copiarimagen {
-	width: 30px;
-	height: 30px;
+	width: 29.75%;
+	height: 10%;
+	font-size: 140%;
 }
 
 .parrafo {
+	font-size: 100%;
 	margin: 0px;
 }
 
@@ -91,11 +92,11 @@ html {
 	margin-top: 10px;
 }
 .titulo {
-	color: white;
+	color: #e2e4ea;
 	text-align: center;
 	clear: both;
 	font-size: 220%;
-	font-family: 'Baloo Bhaina', cursive;
+	text-decoration:underline;
 
 }
 
